@@ -10,15 +10,14 @@ public class QsNo6 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int []weight=new int[10];
-		int total=0;
-		double avg=0;
+		double []weight=new double[10];
+		double total=0,avg=0;
 		for(int i=0;i<weight.length;i++) {
 			System.out.println("Enter the weight of person "+(i+1)+": ");
-			weight[i]=sc.nextInt();
+			weight[i]=sc.nextDouble();
 			total+=weight[i];
 		}
-		avg=(double) total/weight.length;
+		avg=total/weight.length;
 		System.out.println("Average weight of 10 people is "+avg);
 	}
 
